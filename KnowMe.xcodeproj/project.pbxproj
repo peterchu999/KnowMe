@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422B5910241F082A00294F5C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B590F241F082A00294F5C /* RoundedButton.swift */; };
+		422B5912241F109300294F5C /* DesignedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B5911241F109300294F5C /* DesignedButton.swift */; };
+		422B5914241F2E5D00294F5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B5913241F2E5D00294F5C /* HomeViewController.swift */; };
+		422B5918241F39B000294F5C /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B5917241F39B000294F5C /* ColorPalette.swift */; };
+		422B591A241F3EE100294F5C /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 422B5919241F3EE100294F5C /* SF-Pro-Rounded-Bold.otf */; settings = {ASSET_TAGS = ("SF-Pro-Rounded", ); }; };
+		422B591D241F430600294F5C /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 422B591C241F430100294F5C /* SF-Pro-Rounded-Regular.otf */; };
+		422B5920241F461500294F5C /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B591F241F461500294F5C /* CustomView.swift */; };
 		426088CD2410D70000313139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426088CC2410D70000313139 /* AppDelegate.swift */; };
 		426088CF2410D70000313139 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426088CE2410D70000313139 /* SceneDelegate.swift */; };
-		426088D12410D70000313139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426088D02410D70000313139 /* ViewController.swift */; };
 		426088D42410D70000313139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426088D22410D70000313139 /* Main.storyboard */; };
 		426088D62410D70100313139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426088D52410D70100313139 /* Assets.xcassets */; };
 		426088D92410D70100313139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426088D72410D70100313139 /* LaunchScreen.storyboard */; };
 		426088E42410D70100313139 /* KnowMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426088E32410D70100313139 /* KnowMeTests.swift */; };
 		426088EF2410D70100313139 /* KnowMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426088EE2410D70100313139 /* KnowMeUITests.swift */; };
-		42EA3B93241377B40026F01E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA3B92241377B40026F01E /* QuizView.swift */; };
-		42EBECF42413A76E00214F38 /* UICustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EBECF32413A76E00214F38 /* UICustom.swift */; };
-		42EBECF62413B6ED00214F38 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EBECF52413B6ED00214F38 /* FactView.swift */; };
+		4261B5CD2421FF010078ED06 /* OptionInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5CC2421FF010078ED06 /* OptionInput.swift */; };
+		4285DF092418FBE000B68AAC /* UtilColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285DF082418FBE000B68AAC /* UtilColor.swift */; };
+		429C4E89241FF6CE004C3458 /* AppDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429C4E88241FF6CE004C3458 /* AppDescriptionViewController.swift */; };
+		42B186D42421D020004BAB6E /* TrueFalseOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B186D32421D020004BAB6E /* TrueFalseOption.swift */; };
+		42EC16D024212CAE0099E985 /* InGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC16CF24212CAE0099E985 /* InGameButton.swift */; };
+		42EC16D72421C3780099E985 /* MakeQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC16D62421C3780099E985 /* MakeQuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		422B590F241F082A00294F5C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		422B5911241F109300294F5C /* DesignedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignedButton.swift; sourceTree = "<group>"; };
+		422B5913241F2E5D00294F5C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		422B5917241F39B000294F5C /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		422B5919241F3EE100294F5C /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		422B591B241F430100294F5C /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		422B591C241F430100294F5C /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		422B591F241F461500294F5C /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		426088C92410D70000313139 /* KnowMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426088CC2410D70000313139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		426088CE2410D70000313139 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		426088D02410D70000313139 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		426088D32410D70000313139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		426088D52410D70100313139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		426088D82410D70100313139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +68,12 @@
 		426088EA2410D70100313139 /* KnowMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		426088EE2410D70100313139 /* KnowMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowMeUITests.swift; sourceTree = "<group>"; };
 		426088F02410D70100313139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42EA3B92241377B40026F01E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
-		42EBECF32413A76E00214F38 /* UICustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustom.swift; sourceTree = "<group>"; };
-		42EBECF52413B6ED00214F38 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
+		4261B5CC2421FF010078ED06 /* OptionInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionInput.swift; sourceTree = "<group>"; };
+		4285DF082418FBE000B68AAC /* UtilColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilColor.swift; sourceTree = "<group>"; };
+		429C4E88241FF6CE004C3458 /* AppDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDescriptionViewController.swift; sourceTree = "<group>"; };
+		42B186D32421D020004BAB6E /* TrueFalseOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseOption.swift; sourceTree = "<group>"; };
+		42EC16CF24212CAE0099E985 /* InGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameButton.swift; sourceTree = "<group>"; };
+		42EC16D62421C3780099E985 /* MakeQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeQuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +101,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		422B591E241F431800294F5C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				422B591C241F430100294F5C /* SF-Pro-Rounded-Regular.otf */,
+				422B591B241F430100294F5C /* SF-Pro-Rounded-Semibold.otf */,
+				422B5919241F3EE100294F5C /* SF-Pro-Rounded-Bold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		426088C02410D70000313139 = {
 			isa = PBXGroup;
 			children = (
+				4261B5CC2421FF010078ED06 /* OptionInput.swift */,
+				422B591E241F431800294F5C /* Font */,
 				426088CB2410D70000313139 /* KnowMe */,
 				426088E22410D70100313139 /* KnowMeTests */,
 				426088ED2410D70100313139 /* KnowMeUITests */,
@@ -107,14 +138,13 @@
 			children = (
 				426088CC2410D70000313139 /* AppDelegate.swift */,
 				426088CE2410D70000313139 /* SceneDelegate.swift */,
-				426088D02410D70000313139 /* ViewController.swift */,
-				42EA3B92241377B40026F01E /* QuizView.swift */,
 				426088D22410D70000313139 /* Main.storyboard */,
 				426088D52410D70100313139 /* Assets.xcassets */,
 				426088D72410D70100313139 /* LaunchScreen.storyboard */,
 				426088DA2410D70100313139 /* Info.plist */,
-				42EBECF32413A76E00214F38 /* UICustom.swift */,
-				42EBECF52413B6ED00214F38 /* FactView.swift */,
+				4285DF0A2418FD4000B68AAC /* Util */,
+				429C4E87241FF651004C3458 /* Components */,
+				429C4E86241FF631004C3458 /* ViewControllers */,
 			);
 			path = KnowMe;
 			sourceTree = "<group>";
@@ -135,6 +165,45 @@
 				426088F02410D70100313139 /* Info.plist */,
 			);
 			path = KnowMeUITests;
+			sourceTree = "<group>";
+		};
+		4285DF0A2418FD4000B68AAC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				422B5917241F39B000294F5C /* ColorPalette.swift */,
+				4285DF082418FBE000B68AAC /* UtilColor.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		429C4E86241FF631004C3458 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				42EC16D62421C3780099E985 /* MakeQuizViewController.swift */,
+				422B5913241F2E5D00294F5C /* HomeViewController.swift */,
+				429C4E88241FF6CE004C3458 /* AppDescriptionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		429C4E87241FF651004C3458 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				42B186D02421CCC4004BAB6E /* TrueFalseOption */,
+				422B591F241F461500294F5C /* CustomView.swift */,
+				422B590F241F082A00294F5C /* RoundedButton.swift */,
+				422B5911241F109300294F5C /* DesignedButton.swift */,
+				42EC16CF24212CAE0099E985 /* InGameButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		42B186D02421CCC4004BAB6E /* TrueFalseOption */ = {
+			isa = PBXGroup;
+			children = (
+				42B186D32421D020004BAB6E /* TrueFalseOption.swift */,
+			);
+			path = TrueFalseOption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +268,9 @@
 		426088C12410D70000313139 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					"SF-Pro-Rounded",
+				);
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Peter Andrew";
@@ -242,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				426088D92410D70100313139 /* LaunchScreen.storyboard in Resources */,
+				422B591D241F430600294F5C /* SF-Pro-Rounded-Regular.otf in Resources */,
+				422B591A241F3EE100294F5C /* SF-Pro-Rounded-Bold.otf in Resources */,
 				426088D62410D70100313139 /* Assets.xcassets in Resources */,
 				426088D42410D70000313139 /* Main.storyboard in Resources */,
 			);
@@ -268,12 +342,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42EBECF62413B6ED00214F38 /* FactView.swift in Sources */,
-				426088D12410D70000313139 /* ViewController.swift in Sources */,
-				42EBECF42413A76E00214F38 /* UICustom.swift in Sources */,
-				42EA3B93241377B40026F01E /* QuizView.swift in Sources */,
+				42EC16D024212CAE0099E985 /* InGameButton.swift in Sources */,
+				422B5918241F39B000294F5C /* ColorPalette.swift in Sources */,
+				4261B5CD2421FF010078ED06 /* OptionInput.swift in Sources */,
+				422B5920241F461500294F5C /* CustomView.swift in Sources */,
+				4285DF092418FBE000B68AAC /* UtilColor.swift in Sources */,
+				422B5910241F082A00294F5C /* RoundedButton.swift in Sources */,
 				426088CD2410D70000313139 /* AppDelegate.swift in Sources */,
+				429C4E89241FF6CE004C3458 /* AppDescriptionViewController.swift in Sources */,
 				426088CF2410D70000313139 /* SceneDelegate.swift in Sources */,
+				42B186D42421D020004BAB6E /* TrueFalseOption.swift in Sources */,
+				42EC16D72421C3780099E985 /* MakeQuizViewController.swift in Sources */,
+				422B5914241F2E5D00294F5C /* HomeViewController.swift in Sources */,
+				422B5912241F109300294F5C /* DesignedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
