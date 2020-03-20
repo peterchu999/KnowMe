@@ -35,4 +35,11 @@ open class RoundedButton: UIButton {
         shadowLayer.shadowRadius = 10
     }
     
+    @IBInspectable
+    public var roundPx: CGFloat = 25 {
+        didSet {
+            self.layer.cornerRadius = roundPx
+        }
+    }
+    
 }

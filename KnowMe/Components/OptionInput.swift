@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class OptionsInput:UIView{
+class OptionInput:UIView{
     var label:UILabel?
     var input:UITextField?
-    var button:UIButton?
+    var button:UISwitch?
     public override init(frame: CGRect){
         super.init(frame:frame)
         initInside()
@@ -25,9 +25,11 @@ class OptionsInput:UIView{
     
     private func initInside(){
         initLabel()
+        initButton()
         initInput()
         self.addSubview(label!)
         self.addSubview(input!)
+        self.addSubview(button!)
     }
     
     private func initLabel(){
@@ -43,7 +45,8 @@ class OptionsInput:UIView{
     }
     
     private func initButton(){
-        self.button = UIButton(frame: CGRect(x: 0, y: 0, width: self.frame.width*3/4, height: self.frame.height*3/8))
+        self.button = UISwitch(frame: CGRect(x: self.frame.width*3/4, y: 0, width: self.frame.width*1/4, height: self.frame.height*1/4))
+        
     }
     
     public func setLabelText(_ title:String){

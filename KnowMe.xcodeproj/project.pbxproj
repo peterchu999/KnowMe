@@ -22,7 +22,18 @@
 		426088E42410D70100313139 /* KnowMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426088E32410D70100313139 /* KnowMeTests.swift */; };
 		426088EF2410D70100313139 /* KnowMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426088EE2410D70100313139 /* KnowMeUITests.swift */; };
 		4261B5CD2421FF010078ED06 /* OptionInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5CC2421FF010078ED06 /* OptionInput.swift */; };
+		4261B5CF242205180078ED06 /* OptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5CE242205180078ED06 /* OptionModel.swift */; };
+		4261B5D1242207A90078ED06 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5D0242207A90078ED06 /* RoundedView.swift */; };
+		4261B5D3242209510078ED06 /* TextViewRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5D2242209510078ED06 /* TextViewRounded.swift */; };
+		4261B5D5242215840078ED06 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5D4242215840078ED06 /* Question.swift */; };
+		4261B5D7242216B20078ED06 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5D6242216B20078ED06 /* Quiz.swift */; };
+		4261B5DB24226C910078ED06 /* MakeQuizCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5DA24226C910078ED06 /* MakeQuizCodeViewController.swift */; };
+		4261B5DD2422795A0078ED06 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5DC2422795A0078ED06 /* DataStore.swift */; };
+		426D31782424A35C00E5834A /* ResultPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D31772424A35C00E5834A /* ResultPageViewController.swift */; };
 		4285DF092418FBE000B68AAC /* UtilColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285DF082418FBE000B68AAC /* UtilColor.swift */; };
+		4298583724233629008CB375 /* MakeQuizFinaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298583624233629008CB375 /* MakeQuizFinaleViewController.swift */; };
+		429913D12423712C004EBA57 /* PlayCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429913D02423712C004EBA57 /* PlayCodeViewController.swift */; };
+		429913D324249832004EBA57 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429913D224249832004EBA57 /* GameViewController.swift */; };
 		429C4E89241FF6CE004C3458 /* AppDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429C4E88241FF6CE004C3458 /* AppDescriptionViewController.swift */; };
 		42B186D42421D020004BAB6E /* TrueFalseOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B186D32421D020004BAB6E /* TrueFalseOption.swift */; };
 		42EC16D024212CAE0099E985 /* InGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC16CF24212CAE0099E985 /* InGameButton.swift */; };
@@ -69,7 +80,18 @@
 		426088EE2410D70100313139 /* KnowMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowMeUITests.swift; sourceTree = "<group>"; };
 		426088F02410D70100313139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4261B5CC2421FF010078ED06 /* OptionInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionInput.swift; sourceTree = "<group>"; };
+		4261B5CE242205180078ED06 /* OptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionModel.swift; sourceTree = "<group>"; };
+		4261B5D0242207A90078ED06 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		4261B5D2242209510078ED06 /* TextViewRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewRounded.swift; sourceTree = "<group>"; };
+		4261B5D4242215840078ED06 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4261B5D6242216B20078ED06 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		4261B5DA24226C910078ED06 /* MakeQuizCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeQuizCodeViewController.swift; sourceTree = "<group>"; };
+		4261B5DC2422795A0078ED06 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		426D31772424A35C00E5834A /* ResultPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPageViewController.swift; sourceTree = "<group>"; };
 		4285DF082418FBE000B68AAC /* UtilColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilColor.swift; sourceTree = "<group>"; };
+		4298583624233629008CB375 /* MakeQuizFinaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeQuizFinaleViewController.swift; sourceTree = "<group>"; };
+		429913D02423712C004EBA57 /* PlayCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCodeViewController.swift; sourceTree = "<group>"; };
+		429913D224249832004EBA57 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		429C4E88241FF6CE004C3458 /* AppDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDescriptionViewController.swift; sourceTree = "<group>"; };
 		42B186D32421D020004BAB6E /* TrueFalseOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseOption.swift; sourceTree = "<group>"; };
 		42EC16CF24212CAE0099E985 /* InGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameButton.swift; sourceTree = "<group>"; };
@@ -114,7 +136,6 @@
 		426088C02410D70000313139 = {
 			isa = PBXGroup;
 			children = (
-				4261B5CC2421FF010078ED06 /* OptionInput.swift */,
 				422B591E241F431800294F5C /* Font */,
 				426088CB2410D70000313139 /* KnowMe */,
 				426088E22410D70100313139 /* KnowMeTests */,
@@ -145,6 +166,7 @@
 				4285DF0A2418FD4000B68AAC /* Util */,
 				429C4E87241FF651004C3458 /* Components */,
 				429C4E86241FF631004C3458 /* ViewControllers */,
+				429913D424249A46004EBA57 /* Model */,
 			);
 			path = KnowMe;
 			sourceTree = "<group>";
@@ -170,10 +192,20 @@
 		4285DF0A2418FD4000B68AAC /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				4261B5DC2422795A0078ED06 /* DataStore.swift */,
 				422B5917241F39B000294F5C /* ColorPalette.swift */,
 				4285DF082418FBE000B68AAC /* UtilColor.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		429913D424249A46004EBA57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4261B5D4242215840078ED06 /* Question.swift */,
+				4261B5D6242216B20078ED06 /* Quiz.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		429C4E86241FF631004C3458 /* ViewControllers */ = {
@@ -182,6 +214,11 @@
 				42EC16D62421C3780099E985 /* MakeQuizViewController.swift */,
 				422B5913241F2E5D00294F5C /* HomeViewController.swift */,
 				429C4E88241FF6CE004C3458 /* AppDescriptionViewController.swift */,
+				4261B5DA24226C910078ED06 /* MakeQuizCodeViewController.swift */,
+				4298583624233629008CB375 /* MakeQuizFinaleViewController.swift */,
+				429913D02423712C004EBA57 /* PlayCodeViewController.swift */,
+				429913D224249832004EBA57 /* GameViewController.swift */,
+				426D31772424A35C00E5834A /* ResultPageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,8 +229,12 @@
 				42B186D02421CCC4004BAB6E /* TrueFalseOption */,
 				422B591F241F461500294F5C /* CustomView.swift */,
 				422B590F241F082A00294F5C /* RoundedButton.swift */,
+				4261B5CC2421FF010078ED06 /* OptionInput.swift */,
 				422B5911241F109300294F5C /* DesignedButton.swift */,
 				42EC16CF24212CAE0099E985 /* InGameButton.swift */,
+				4261B5CE242205180078ED06 /* OptionModel.swift */,
+				4261B5D0242207A90078ED06 /* RoundedView.swift */,
+				4261B5D2242209510078ED06 /* TextViewRounded.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -343,15 +384,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EC16D024212CAE0099E985 /* InGameButton.swift in Sources */,
+				4261B5D3242209510078ED06 /* TextViewRounded.swift in Sources */,
 				422B5918241F39B000294F5C /* ColorPalette.swift in Sources */,
+				4261B5D5242215840078ED06 /* Question.swift in Sources */,
 				4261B5CD2421FF010078ED06 /* OptionInput.swift in Sources */,
 				422B5920241F461500294F5C /* CustomView.swift in Sources */,
+				4298583724233629008CB375 /* MakeQuizFinaleViewController.swift in Sources */,
 				4285DF092418FBE000B68AAC /* UtilColor.swift in Sources */,
 				422B5910241F082A00294F5C /* RoundedButton.swift in Sources */,
+				4261B5D7242216B20078ED06 /* Quiz.swift in Sources */,
+				4261B5DB24226C910078ED06 /* MakeQuizCodeViewController.swift in Sources */,
+				4261B5CF242205180078ED06 /* OptionModel.swift in Sources */,
 				426088CD2410D70000313139 /* AppDelegate.swift in Sources */,
+				4261B5D1242207A90078ED06 /* RoundedView.swift in Sources */,
+				429913D324249832004EBA57 /* GameViewController.swift in Sources */,
+				4261B5DD2422795A0078ED06 /* DataStore.swift in Sources */,
+				429913D12423712C004EBA57 /* PlayCodeViewController.swift in Sources */,
 				429C4E89241FF6CE004C3458 /* AppDescriptionViewController.swift in Sources */,
 				426088CF2410D70000313139 /* SceneDelegate.swift in Sources */,
 				42B186D42421D020004BAB6E /* TrueFalseOption.swift in Sources */,
+				426D31782424A35C00E5834A /* ResultPageViewController.swift in Sources */,
 				42EC16D72421C3780099E985 /* MakeQuizViewController.swift in Sources */,
 				422B5914241F2E5D00294F5C /* HomeViewController.swift in Sources */,
 				422B5912241F109300294F5C /* DesignedButton.swift in Sources */,

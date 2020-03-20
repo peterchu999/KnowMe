@@ -128,15 +128,213 @@
                                         <color key="value" red="0.53333333333333333" green="0.61960784313725492" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Fm8-UV-jeV" kind="presentation" modalPresentationStyle="automatic" modalTransitionStyle="coverVertical" id="MSd-5b-X3b"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kEa-nf-WWS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Play Code View Controller-->
+        <scene sceneID="Y4B-aW-JLt">
+            <objects>
+                <viewController id="Fm8-UV-jeV" customClass="PlayCodeViewController" customModule="KnowMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xyY-ul-Jdv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlayScreen" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-6M-ndc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENTER 6 DIGIT CODE FOR YOUR ROOM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMW-X2-5Tl">
+                                <rect key="frame" x="44" y="321" width="326" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="34"/>
+                                <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="HGt-GR-JSb">
+                                <rect key="frame" x="44" y="437" width="326" height="50.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="name"/>
+                                <connections>
+                                    <action selector="closeKeyboard:" destination="Fm8-UV-jeV" eventType="primaryActionTriggered" id="p7o-cw-H5t"/>
+                                    <action selector="editingChange:" destination="Fm8-UV-jeV" eventType="editingChanged" id="Ou6-fi-j83"/>
+                                    <action selector="edittingChange:" destination="0C1-Zw-HQs" eventType="editingChanged" id="9aZ-9Z-B1R"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO ROOM CLICK HERE TO CREATE ONE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnM-kh-38a">
+                                <rect key="frame" x="44" y="247" width="326" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="27"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fbJ-OE-Yzf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XJW-a5-wJr"/>
+                    <connections>
+                        <outlet property="labelWarning" destination="wnM-kh-38a" id="Wry-3s-6e5"/>
+                        <outlet property="textFieldCode" destination="HGt-GR-JSb" id="gQ2-xH-dv1"/>
+                        <segue destination="jvR-n6-GmI" kind="presentation" identifier="toGame" modalPresentationStyle="fullScreen" id="N64-56-gxp"/>
+                        <segue destination="Hhp-Ln-hA3" kind="presentation" identifier="createRoomFromPlay" modalPresentationStyle="fullScreen" id="lFR-rN-EHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCO-fB-xdW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943.47826086956525" y="150.66964285714286"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="5Jn-po-WTd">
+            <objects>
+                <viewController id="jvR-n6-GmI" customClass="GameViewController" customModule="KnowMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l9O-Wq-9sM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RoomScreen" translatesAutoresizingMaskIntoConstraints="NO" id="XjR-H8-F7v">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are this statement correct" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaJ-ch-lLY">
+                                <rect key="frame" x="66" y="89" width="283" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="34"/>
+                                <color key="textColor" red="0.8980392157" green="0.89411764709999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRe-Bb-8hj">
+                                <rect key="frame" x="0.0" y="279" width="414" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Statement" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3V-8b-B6J">
+                                        <rect key="frame" x="45" y="8" width="324" height="323"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ng-95-q2s" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
+                                <rect key="frame" x="45" y="655" width="324" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="28"/>
+                                <state key="normal" title="YES">
+                                    <color key="titleColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeQuestion:" destination="Hhp-Ln-hA3" eventType="touchUpInside" id="LqT-at-O1y"/>
+                                    <action selector="chooseQuestion:" destination="jvR-n6-GmI" eventType="touchUpInside" id="axa-cX-Vxp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAW-VG-QXa" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
+                                <rect key="frame" x="45" y="760" width="324" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.89411764709999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="28"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeQuestion:" destination="Hhp-Ln-hA3" eventType="touchUpInside" id="nKr-GH-PqV"/>
+                                    <action selector="chooseQuestion:" destination="jvR-n6-GmI" eventType="touchUpInside" id="yij-eb-jSg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7/8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjP-OW-uyc">
+                                <rect key="frame" x="304" y="240" width="65" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="20"/>
+                                <color key="textColor" red="0.8980392157" green="0.89411764709999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5LN-pC-by8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="COJ-Mn-5P7"/>
+                    <connections>
+                        <outlet property="buttonNo" destination="PAW-VG-QXa" id="h5p-nk-4NR"/>
+                        <outlet property="buttonYes" destination="7Ng-95-q2s" id="IYV-ct-oth"/>
+                        <outlet property="labelCounter" destination="KjP-OW-uyc" id="0Yk-tC-ZLu"/>
+                        <outlet property="labelStatement" destination="T3V-8b-B6J" id="9EE-qJ-9aP"/>
+                        <segue destination="dgE-BP-unZ" kind="presentation" identifier="seeResult" modalPresentationStyle="fullScreen" id="y06-bU-ViH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGF-tQ-A5q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671.0144927536232" y="154.6875"/>
+        </scene>
+        <!--Result Page View Controller-->
+        <scene sceneID="wrx-vS-rbQ">
+            <objects>
+                <viewController id="dgE-BP-unZ" customClass="ResultPageViewController" customModule="KnowMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IH3-cw-oAl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlayDoneScreen" translatesAutoresizingMaskIntoConstraints="NO" id="cy1-mS-vgx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yey, You Got 8/8 Correct Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3Q-1V-gjs">
+                                <rect key="frame" x="44" y="315" width="326" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="34"/>
+                                <color key="textColor" red="0.8980392157" green="0.89411764709999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hng-h2-LFR" customClass="RoundedButton" customModule="KnowMe" customModuleProvider="target">
+                                <rect key="frame" x="295" y="759" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.89411764709999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="tintColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="checkmark" catalog="system">
+                                    <color key="titleColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="medium" weight="semibold"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="symbolColor">
+                                        <color key="value" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="symbolName" value="doc.text"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundPx">
+                                        <real key="value" value="38"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ogd-pW-8v5" kind="unwind" unwindAction="unwindToHome:" id="pyP-9O-jnJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oTG-VL-OMN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M1N-bl-UFe"/>
+                    <connections>
+                        <outlet property="labelResult" destination="r3Q-1V-gjs" id="62G-dO-SSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t25-En-bco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ogd-pW-8v5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2411" y="161"/>
         </scene>
         <!--Make Quiz View Controller-->
         <scene sceneID="sWK-tZ-S9k">
@@ -162,6 +360,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="symbolName" value="doc.text"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="moveQuestion:" destination="Hhp-Ln-hA3" eventType="touchUpInside" id="dLg-R1-FmK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-h1-eg8" customClass="RoundedButton" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="344" y="62" width="50" height="50"/>
@@ -180,8 +381,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="symbolName" value="doc.text"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="closeModals:" destination="BOU-ar-0qw" eventType="touchUpInside" id="2KF-WM-KZP"/>
-                                    <segue destination="0C1-Zw-HQs" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="gXA-GO-HTE"/>
+                                    <action selector="moveQuestion:" destination="Hhp-Ln-hA3" eventType="touchUpInside" id="970-tD-va2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1/2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEh-Gs-eaM">
@@ -192,21 +392,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR7-4P-PeR">
-                                <rect key="frame" x="20" y="137" width="258" height="34"/>
+                                <rect key="frame" x="20" y="137" width="112" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
                                 <color key="textColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cjK-Du-01a">
-                                <rect key="frame" x="20" y="179" width="374" height="172"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cjK-Du-01a" customClass="TextViewRounded" customModule="KnowMe" customModuleProvider="target">
+                                <rect key="frame" x="20" y="179" width="374" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyh-Sb-pME" customClass="RoundedButton" customModule="KnowMe" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyh-Sb-pME" customClass="RoundedButton" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="344" y="369" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -226,7 +426,7 @@
                                     <action selector="closeModals:" destination="BOU-ar-0qw" eventType="touchUpInside" id="goe-D2-Shr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Question Type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sU0-j8-Xui">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Question Type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sU0-j8-Xui">
                                 <rect key="frame" x="20" y="384" width="316" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
@@ -241,8 +441,68 @@
                                 <state key="normal" title="Save Quiz">
                                     <color key="titleColor" red="0.77647058823529413" green="0.83137254901960778" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeQuestion:" destination="Hhp-Ln-hA3" eventType="touchUpInside" id="wF3-MR-20D"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ng-95-q2s" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihV-VM-0Gl">
+                                <rect key="frame" x="20" y="442" width="374" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nhe-n5-BqS">
+                                        <rect key="frame" x="281" y="82" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="onTintColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeAnswer:" destination="Hhp-Ln-hA3" eventType="touchUpInside" id="NOI-H8-LcG"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7sa-jL-9Fc">
+                                        <rect key="frame" x="281" y="221" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="onTintColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeAnswer:" destination="Hhp-Ln-hA3" eventType="valueChanged" id="yry-2a-ef6"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set Answer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unM-L9-wGY">
+                                        <rect key="frame" x="0.0" y="-8" width="366" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
+                                        <color key="textColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="True" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FT-gy-8xl" customClass="RoundedView" customModule="KnowMe" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="72" width="217" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
+                                        <color key="textColor" red="0.72941176470000002" green="0.78039215689999997" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="False" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYG-wc-QLD" customClass="RoundedView" customModule="KnowMe" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="211" width="217" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="24"/>
+                                        <color key="textColor" red="0.72941176470000002" green="0.78039215689999997" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="Rounder">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="too long (Max : 50 Character)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFr-Wb-t9i">
+                                <rect key="frame" x="165" y="137" width="229" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-xw-WAI" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="234" y="796" width="160" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -250,28 +510,43 @@
                                 <state key="normal" title="New Question">
                                     <color key="titleColor" red="0.77647058820000003" green="0.83137254900000002" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeQuestion:" destination="Hhp-Ln-hA3" eventType="touchUpInside" id="ENS-EG-t13"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihV-VM-0Gl">
-                                <rect key="frame" x="20" y="442" width="374" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.72941176470588232" green="0.7803921568627451" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Vtd-AY-Ewi"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Vyh-Sb-pME"/>
+                                <exclude reference="sU0-j8-Xui"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="4DD-kw-iHA"/>
                     <connections>
                         <outlet property="OptionContainer" destination="ihV-VM-0Gl" id="FAr-ZK-KuA"/>
+                        <outlet property="buttonBack" destination="yt3-Ww-d4e" id="cnf-IQ-Jba"/>
+                        <outlet property="buttonNew" destination="lgh-xw-WAI" id="yMl-1I-r5l"/>
+                        <outlet property="buttonNext" destination="qoj-h1-eg8" id="xCi-vC-3fz"/>
+                        <outlet property="buttonSave" destination="00Q-9b-f9K" id="Odg-Kv-Zg2"/>
+                        <outlet property="labelCounter" destination="eEh-Gs-eaM" id="CYL-bc-LT1"/>
+                        <outlet property="labelWarning" destination="MFr-Wb-t9i" id="3KS-WQ-HuB"/>
+                        <outlet property="switchFalse" destination="7sa-jL-9Fc" id="nWQ-Es-cPJ"/>
+                        <outlet property="switchTrue" destination="nhe-n5-BqS" id="frX-VQ-jv1"/>
+                        <outlet property="textViewQuestion" destination="cjK-Du-01a" id="RSM-hD-T8Q"/>
+                        <segue destination="0C1-Zw-HQs" kind="presentation" identifier="saveRoom" modalPresentationStyle="fullScreen" id="D4A-at-VPF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRb-0b-o2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="150.72463768115944" y="835.71428571428567"/>
+            <point key="canvasLocation" x="-9" y="874"/>
         </scene>
-        <!--View Controller-->
+        <!--Make Quiz Code View Controller-->
         <scene sceneID="Bi4-TU-nPu">
             <objects>
-                <viewController id="0C1-Zw-HQs" sceneMemberID="viewController">
+                <viewController id="0C1-Zw-HQs" customClass="MakeQuizCodeViewController" customModule="KnowMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HhQ-3o-69m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,40 +556,123 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENTER 6 DIGIT CODE FOR YOUR ROOM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAh-27-LpX">
-                                <rect key="frame" x="44" y="307" width="326" height="107"/>
+                                <rect key="frame" x="44" y="304" width="326" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="34"/>
                                 <color key="textColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="k" borderStyle="roundedRect" textAlignment="center" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="yzY-TI-HWe">
-                                <rect key="frame" x="44" y="431" width="326" height="50.5"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="yzY-TI-HWe">
+                                <rect key="frame" x="44" y="420" width="326" height="50.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="34"/>
-                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="name"/>
+                                <connections>
+                                    <action selector="edittingChange:" destination="0C1-Zw-HQs" eventType="editingChanged" id="DIA-s5-qH3"/>
+                                    <action selector="returnTrigger:" destination="0C1-Zw-HQs" eventType="primaryActionTriggered" id="Dy6-eq-uzm"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.72941176470588232" green="0.7803921568627451" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="RgI-nX-k7H"/>
                     </view>
                     <navigationItem key="navigationItem" id="DCy-r2-BfD"/>
+                    <connections>
+                        <outlet property="textFieldCode" destination="yzY-TI-HWe" id="1eu-RS-LzX"/>
+                        <segue destination="imN-Lw-f3I" kind="presentation" identifier="makeFinish" modalPresentationStyle="fullScreen" id="dnO-lO-UeV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NTt-6o-Z6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="876.81159420289862" y="829.6875"/>
         </scene>
+        <!--Make Quiz Finale View Controller-->
+        <scene sceneID="bfu-9W-rIq">
+            <objects>
+                <viewController id="imN-Lw-f3I" customClass="MakeQuizFinaleViewController" customModule="KnowMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fYG-Fv-tkB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MakeQuizBg" translatesAutoresizingMaskIntoConstraints="NO" id="tRu-Sf-7zR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Successfully Created Room with" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kj4-L3-7ZL">
+                                <rect key="frame" x="44" y="326" width="326" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="28"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tree" translatesAutoresizingMaskIntoConstraints="NO" id="zLw-qS-oRy">
+                                <rect key="frame" x="0.0" y="499" width="414" height="397"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgr-Mv-JLz" customClass="RoundedButton" customModule="KnowMe" customModuleProvider="target">
+                                <rect key="frame" x="295" y="766" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="tintColor" red="0.8980392157" green="0.89411764709999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="checkmark" catalog="system">
+                                    <color key="titleColor" red="0.8980392157" green="0.89411764709999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="medium" weight="semibold"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="symbolColor">
+                                        <color key="value" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="symbolName" value="doc.text"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundPx">
+                                        <real key="value" value="38"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="NQZ-3g-o64" kind="unwind" unwindAction="unwindToHome:" id="HpR-NC-vQR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="789678" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIU-uR-IYY">
+                                <rect key="frame" x="44" y="428" width="326" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="34"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="T49-6F-j9p"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v14-yH-KZs"/>
+                    <connections>
+                        <outlet property="labelCode" destination="ZIU-uR-IYY" id="6gd-uW-tSE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUM-zY-ljU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NQZ-3g-o64" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1791.304347826087" y="833.70535714285711"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AppsScreenBg" width="375" height="771"/>
         <image name="MakeQuizBg" width="375" height="812"/>
+        <image name="PlayDoneScreen" width="375" height="812"/>
+        <image name="PlayScreen" width="375" height="812"/>
+        <image name="RoomScreen" width="375" height="812"/>
+        <image name="Tree" width="375" height="350"/>
         <image name="arrow.right.arrow.left" catalog="system" width="58" height="64"/>
         <image name="buttonMakeRoom" width="319" height="80"/>
         <image name="buttonPlay" width="319" height="80"/>
+        <image name="checkmark" catalog="system" width="64" height="56"/>
         <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="chevron.right" catalog="system" width="48" height="64"/>
         <image name="people card" width="319" height="404"/>
         <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lFR-rN-EHT"/>
+    </inferredMetricsTieBreakers>
 </document>
