@@ -30,6 +30,7 @@ class DataStore {
     }
     
     public func setQuiz(_ quiz: Quiz){
+        
         self.quiz = quiz
     }
 }

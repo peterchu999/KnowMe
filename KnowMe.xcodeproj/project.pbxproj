@@ -30,6 +30,7 @@
 		4261B5DB24226C910078ED06 /* MakeQuizCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5DA24226C910078ED06 /* MakeQuizCodeViewController.swift */; };
 		4261B5DD2422795A0078ED06 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261B5DC2422795A0078ED06 /* DataStore.swift */; };
 		426D31782424A35C00E5834A /* ResultPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D31772424A35C00E5834A /* ResultPageViewController.swift */; };
+		42859C7C242A5A5D0014155D /* KnowMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42859C7A242A5A5D0014155D /* KnowMe.xcdatamodeld */; };
 		4285DF092418FBE000B68AAC /* UtilColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285DF082418FBE000B68AAC /* UtilColor.swift */; };
 		4298583724233629008CB375 /* MakeQuizFinaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298583624233629008CB375 /* MakeQuizFinaleViewController.swift */; };
 		429913D12423712C004EBA57 /* PlayCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429913D02423712C004EBA57 /* PlayCodeViewController.swift */; };
@@ -88,6 +89,7 @@
 		4261B5DA24226C910078ED06 /* MakeQuizCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeQuizCodeViewController.swift; sourceTree = "<group>"; };
 		4261B5DC2422795A0078ED06 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		426D31772424A35C00E5834A /* ResultPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPageViewController.swift; sourceTree = "<group>"; };
+		42859C7B242A5A5D0014155D /* KnowMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KnowMe.xcdatamodel; sourceTree = "<group>"; };
 		4285DF082418FBE000B68AAC /* UtilColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilColor.swift; sourceTree = "<group>"; };
 		4298583624233629008CB375 /* MakeQuizFinaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeQuizFinaleViewController.swift; sourceTree = "<group>"; };
 		429913D02423712C004EBA57 /* PlayCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCodeViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				4261B5DC2422795A0078ED06 /* DataStore.swift */,
+				42859C7A242A5A5D0014155D /* KnowMe.xcdatamodeld */,
 				422B5917241F39B000294F5C /* ColorPalette.swift */,
 				4285DF082418FBE000B68AAC /* UtilColor.swift */,
 			);
@@ -387,6 +390,7 @@
 				4261B5D3242209510078ED06 /* TextViewRounded.swift in Sources */,
 				422B5918241F39B000294F5C /* ColorPalette.swift in Sources */,
 				4261B5D5242215840078ED06 /* Question.swift in Sources */,
+				42859C7C242A5A5D0014155D /* KnowMe.xcdatamodeld in Sources */,
 				4261B5CD2421FF010078ED06 /* OptionInput.swift in Sources */,
 				422B5920241F461500294F5C /* CustomView.swift in Sources */,
 				4298583724233629008CB375 /* MakeQuizFinaleViewController.swift in Sources */,
@@ -731,6 +735,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42859C7A242A5A5D0014155D /* KnowMe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42859C7B242A5A5D0014155D /* KnowMe.xcdatamodel */,
+			);
+			currentVersion = 42859C7B242A5A5D0014155D /* KnowMe.xcdatamodel */;
+			path = KnowMe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 426088C12410D70000313139 /* Project object */;
 }
