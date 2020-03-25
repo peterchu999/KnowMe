@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G3020" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="QuestionDB" representedClassName="QuestionDB" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="question" optional="YES" attributeType="String"/>
+        <relationship name="quiz" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="QuizDB" inverseName="questionList" inverseEntity="QuizDB"/>
+    </entity>
+    <entity name="QuizDB" representedClassName="QuizDB" syncable="YES" codeGenerationType="class">
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <relationship name="questionList" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="QuestionDB" inverseName="quiz" inverseEntity="QuestionDB"/>
+    </entity>
+    <elements>
+        <element name="QuestionDB" positionX="-54" positionY="0" width="128" height="88"/>
+        <element name="QuizDB" positionX="-313.09375" positionY="-0.21484375" width="128" height="73"/>
+    </elements>
+</model>

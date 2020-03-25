@@ -165,6 +165,7 @@
 				426088D52410D70100313139 /* Assets.xcassets */,
 				426088D72410D70100313139 /* LaunchScreen.storyboard */,
 				426088DA2410D70100313139 /* Info.plist */,
+				42859C7A242A5A5D0014155D /* KnowMe.xcdatamodeld */,
 				4285DF0A2418FD4000B68AAC /* Util */,
 				429C4E87241FF651004C3458 /* Components */,
 				429C4E86241FF631004C3458 /* ViewControllers */,
@@ -195,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				4261B5DC2422795A0078ED06 /* DataStore.swift */,
-				42859C7A242A5A5D0014155D /* KnowMe.xcdatamodeld */,
 				422B5917241F39B000294F5C /* ColorPalette.swift */,
 				4285DF082418FBE000B68AAC /* UtilColor.swift */,
 			);
