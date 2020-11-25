@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -65,8 +67,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0Ge-lc-uHu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vdh-b4-0fH"/>
                 </viewController>
@@ -82,7 +84,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bv-Dj-BFF" customClass="CustomView" customModule="KnowMe" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bv-Dj-BFF" customClass="CustomView" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="47" y="72" width="320" height="405"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -99,7 +101,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khk-FL-02e" customClass="DesignedButton" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="47" y="717" width="319" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="20"/>
                                 <state key="normal" image="buttonMakeRoom"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -117,7 +119,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-1q-qLz" customClass="DesignedButton" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="47" y="577" width="319" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="20"/>
                                 <state key="normal" image="buttonPlay"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -133,8 +135,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="kEa-nf-WWS"/>
                 </viewController>
@@ -178,12 +180,12 @@
                                 <rect key="frame" x="44" y="247" width="326" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Bold" family="SF Pro Rounded" pointSize="27"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fbJ-OE-Yzf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="XJW-a5-wJr"/>
                     <connections>
@@ -230,7 +232,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ng-95-q2s" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ng-95-q2s" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="45" y="655" width="324" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -243,7 +245,7 @@
                                     <action selector="chooseQuestion:" destination="jvR-n6-GmI" eventType="touchUpInside" id="axa-cX-Vxp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAW-VG-QXa" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAW-VG-QXa" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="45" y="760" width="324" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.89411764709999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -264,8 +266,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5LN-pC-by8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="COJ-Mn-5P7"/>
                     <connections>
@@ -323,8 +325,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="oTG-VL-OMN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="M1N-bl-UFe"/>
                     <connections>
@@ -401,8 +403,8 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cjK-Du-01a" customClass="TextViewRounded" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="20" y="179" width="374" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                             </textView>
@@ -433,7 +435,7 @@
                                 <color key="textColor" red="0.2627450980392157" green="0.27843137254901962" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Q-9b-f9K" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00Q-9b-f9K" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="20" y="796" width="160" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2627450980392157" green="0.27843137254901962" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -499,10 +501,10 @@
                                 <rect key="frame" x="165" y="137" width="229" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-xw-WAI" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-xw-WAI" customClass="InGameButton" customModule="KnowMe" customModuleProvider="target">
                                 <rect key="frame" x="234" y="796" width="160" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26274509800000001" green="0.2784313725" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -515,8 +517,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.72941176470588232" green="0.7803921568627451" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Vtd-AY-Ewi"/>
+                        <color key="backgroundColor" red="0.72941176470588232" green="0.7803921568627451" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Vyh-Sb-pME"/>
@@ -575,8 +577,8 @@
                                 </connections>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.72941176470588232" green="0.7803921568627451" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="RgI-nX-k7H"/>
+                        <color key="backgroundColor" red="0.72941176470588232" green="0.7803921568627451" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="DCy-r2-BfD"/>
                     <connections>
@@ -642,8 +644,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="T49-6F-j9p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="v14-yH-KZs"/>
                     <connections>
@@ -656,6 +658,44 @@
             <point key="canvasLocation" x="1791.304347826087" y="833.70535714285711"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="00Q-9b-f9K">
+            <size key="intrinsicContentSize" width="85" height="36"/>
+        </designable>
+        <designable name="7Ng-95-q2s">
+            <size key="intrinsicContentSize" width="52" height="46"/>
+        </designable>
+        <designable name="PAW-VG-QXa">
+            <size key="intrinsicContentSize" width="41" height="46"/>
+        </designable>
+        <designable name="hng-h2-LFR">
+            <size key="intrinsicContentSize" width="27.5" height="34"/>
+        </designable>
+        <designable name="khk-FL-02e">
+            <size key="intrinsicContentSize" width="319" height="80"/>
+        </designable>
+        <designable name="lgh-xw-WAI">
+            <size key="intrinsicContentSize" width="119" height="36"/>
+        </designable>
+        <designable name="qgr-Mv-JLz">
+            <size key="intrinsicContentSize" width="27.5" height="34"/>
+        </designable>
+        <designable name="qoj-h1-eg8">
+            <size key="intrinsicContentSize" width="18.5" height="34"/>
+        </designable>
+        <designable name="t4a-1q-qLz">
+            <size key="intrinsicContentSize" width="319" height="80"/>
+        </designable>
+        <designable name="xNd-Bc-pqu">
+            <size key="intrinsicContentSize" width="25.5" height="34"/>
+        </designable>
+        <designable name="yt3-Ww-d4e">
+            <size key="intrinsicContentSize" width="18.5" height="34"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="hyY-P6-fJS"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="AppsScreenBg" width="375" height="771"/>
         <image name="MakeQuizBg" width="375" height="812"/>
@@ -663,16 +703,22 @@
         <image name="PlayScreen" width="375" height="812"/>
         <image name="RoomScreen" width="375" height="812"/>
         <image name="Tree" width="375" height="350"/>
-        <image name="arrow.right.arrow.left" catalog="system" width="58" height="64"/>
+        <image name="arrow.right.arrow.left" catalog="system" width="119" height="128"/>
         <image name="buttonMakeRoom" width="319" height="80"/>
         <image name="buttonPlay" width="319" height="80"/>
-        <image name="checkmark" catalog="system" width="64" height="56"/>
-        <image name="chevron.left" catalog="system" width="48" height="64"/>
-        <image name="chevron.right" catalog="system" width="48" height="64"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="people card" width="319" height="404"/>
-        <image name="xmark" catalog="system" width="64" height="56"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="lFR-rN-EHT"/>
-    </inferredMetricsTieBreakers>
 </document>
